@@ -52,7 +52,7 @@ function About() {
                                     Founded in 2010, Kisaan Seva began with a simple mission: to provide 
                                     farmers with high-quality agricultural equipment and exceptional service. 
                                     What started as a small shop has grown into a trusted name in the 
-                                    agricultural community.
+                                    
                                 </p>
                                 <p className="section-text">
                                     Today, we continue to serve farmers across Uttar Pradesh with the same 

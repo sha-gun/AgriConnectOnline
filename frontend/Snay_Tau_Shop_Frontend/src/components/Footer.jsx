@@ -80,7 +80,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <MdPhone className="contact-icon" />
-                                    <a href="tel:+919828582401">+91 98285 </a>
+                                    <a href="tel:+919828582401">+91 9828582401 </a>
                                 </li>
                                 <li>
                                     <MdLocationOn className="contact-icon" />
