@@ -1,0 +1,45 @@
+/* src/pages/Wishlist.css */
+
+/* 🌟 Wishlist Container */
+.wishlist-container {
+    padding: 20px;
+    background-color: #f9fafc;
+}
+
+/* 📦 Wishlist Card */
+.wishlist-card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.wishlist-card:hover {
+    transform: scale(1.05);
+}
+
+/* 🖼️ Card Image */
+.wishlist-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* 📝 Card Body */
+.wishlist-card .card-body {
+    text-align: center;
+}
+
+.wishlist-card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.wishlist-card .card-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* 🗑️ Remove Button */
+.wishlist-card .btn-danger {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+}

@@ -1,0 +1,202 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500;600&display=swap');
+
+/* Global Navbar Styles */
+.app-navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: none;
+    height: 72px;
+    z-index: 1050;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: all 0.3s ease;
+}
+
+.app-navbar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        rgba(56, 142, 60, 0),
+        rgba(56, 142, 60, 0.5),
+        rgba(56, 142, 60, 0)
+    );
+}
+
+body {
+    margin-top: 3em!important;
+  }
+
+@media screen and (max-width: 768px) {
+    body {
+        margin-top: 5em!important;
+    }
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 0;
+    text-decoration: none !important;
+}
+
+.navbar-brand:hover {
+    color: #388e3c;
+    transform: translateY(-1px);
+}
+
+.brand-emoji {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .brand-emoji {
+    transform: rotate(10deg);
+}
+
+/* Navbar Toggle */
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar Links */
+.nav-link-item {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #4f4f4f !important;
+    margin: 0 0.8rem;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.nav-link-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #388e3c;
+    transition: width 0.3s ease;
+}
+
+.nav-link-item:hover::after,
+.nav-link-item.active::after {
+    width: 100%;
+}
+
+/* Dropdown Menu */
+#user-nav-dropdown {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+#user-nav-dropdown .dropdown-item {
+    font-size: 0.9rem;
+    color: #4f4f4f;
+}
+
+#user-nav-dropdown .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #388e3c;
+}
+
+/* Navbar Buttons */
+.nav-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.nav-btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.nav-btn-outline-primary {
+    border: 2px solid #388e3c;
+    color: #388e3c;
+    background: transparent;
+}
+
+.nav-btn-primary {
+    background: linear-gradient(45deg, #388e3c, #4caf50);
+    border: none;
+    color: white;
+    box-shadow: 0 2px 8px rgba(56, 142, 60, 0.2);
+}
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(56, 142, 60, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .app-navbar {
+        padding: 0.8rem;
+    }
+
+    .nav-link-item {
+        margin: 0.5rem 0;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+    }
+
+    .nav-link-item:hover {
+        background: rgba(56, 142, 60, 0.1);
+        transform: translateX(5px);
+    }
+
+    .nav-btn {
+        width: 100%;
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,29 @@
+.checkout-container {
+    margin-top: 30px;
+}
+
+.checkout-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Delivery & Payment Details */
+.card {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Order Summary */
+.order-summary {
+    background-color: #f9fafc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.order-summary .btn-success {
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}

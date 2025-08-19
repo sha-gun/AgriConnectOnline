@@ -1,0 +1,139 @@
+.admin-orders-container {
+    background: #f8f9fa;
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+.admin-orders-title {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.admin-orders-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+}
+
+.admin-orders-table {
+    background: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.admin-orders-table thead {
+    background: #34495e;
+    color: white;
+}
+
+.admin-orders-table th {
+    font-weight: 500;
+    padding: 1rem !important;
+}
+
+.admin-orders-table td {
+    vertical-align: middle;
+    padding: 1rem !important;
+}
+
+.order-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.view-btn {
+    background: #3498db !important;
+    border: none !important;
+    padding: 0.4rem 1rem !important;
+    transition: all 0.3s ease !important;
+}
+
+.view-btn:hover {
+    background: #2980b9 !important;
+    transform: translateY(-2px);
+}
+
+.deliver-btn {
+    background: #2ecc71 !important;
+    border: none !important;
+    padding: 0.4rem 1rem !important;
+    transition: all 0.3s ease !important;
+}
+
+.deliver-btn:hover {
+    background: #27ae60 !important;
+    transform: translateY(-2px);
+}
+
+.deliver-btn:disabled {
+    background: #95a5a6 !important;
+    transform: none !important;
+}
+
+/* Modal Styling */
+.order-modal .modal-content {
+    border-radius: 15px;
+    border: none;
+}
+
+.order-modal .modal-header {
+    background: #34495e;
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.order-modal .modal-title {
+    font-weight: 600;
+}
+
+.order-modal .close {
+    color: white;
+}
+
+.order-info-section {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.order-info-section h5 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.order-items-list {
+    margin-top: 1.5rem;
+}
+
+.order-items-list .list-group-item {
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.order-items-list .list-group-item:hover {
+    background: #f8f9fa;
+}
+
+.order-total {
+    background: #34495e;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+.loading-spinner {
+    color: #3498db;
+} 

@@ -1,0 +1,221 @@
+/* 🌍 General Hero Section */
+.hero {
+    position: relative;
+    min-height: 60vh;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.hero-bg-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(#4F709C 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.1;
+}
+
+/* 📦 Content Wrapper */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    max-width: 600px;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(79, 112, 156, 0.1);
+    border-radius: 50px;
+    color: #213555;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+/* 📝 Hero Text Section */
+.hero-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #213555;
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, #213555, #4F709C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    max-width: 540px;
+}
+
+.hero-cta-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    padding: 0.8rem 1.5rem !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.cta-button.primary {
+    background: linear-gradient(45deg, #213555, #4F709C) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.cta-button.secondary {
+    background: transparent !important;
+    border: 2px solid #213555 !important;
+    color: #213555 !important;
+}
+
+.hero-features {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.feature-icon {
+    font-size: 1.2rem;
+    color: #213555;
+}
+
+.feature-text {
+    font-size: 0.95rem;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+/* 🎥 Hero Animation Section */
+.hero-animation-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-animation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.hero-lottie {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    min-height: 350px;
+    object-fit: contain;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-cta-group {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .hero-content {
+        padding: 2rem;
+    }
+
+    .hero-lottie {
+        max-width: 400px;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.4rem;
+    }
+
+    .hero-cta-group {
+        justify-content: center;
+    }
+
+    .hero-features {
+        justify-content: center;
+    }
+
+    .hero-animation {
+        padding: 1rem;
+    }
+
+    .hero-lottie {
+        max-width: 350px;
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+    }
+
+    .hero-features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Add this to control container height */
+.hero .container-fluid {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Update row styles */
+.hero .row {
+    min-height: 55vh;
+    align-items: center;
+}

@@ -1,0 +1,231 @@
+/* Footer Container */
+.footer {
+    background: linear-gradient(to bottom, #2C3E50, #1a252f);
+    color: #e0e0e0;
+    padding: 4rem 0 2rem;
+    position: relative;
+    margin-top: 4rem;
+}
+
+/* Footer Content */
+.footer-content {
+    margin-bottom: 2rem;
+}
+
+.footer-section {
+    margin-bottom: 1rem;
+}
+
+/* Footer Title */
+.footer-title {
+    color: #FBC02D;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.title-emoji {
+    font-size: 1.5rem;
+}
+
+/* About Section */
+.footer-about {
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-link {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FBC02D;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: #FBC02D;
+    color: #2C3E50;
+    transform: translateY(-3px);
+}
+
+/* Quick Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: #FBC02D;
+    transform: translateX(5px);
+}
+
+/* Contact Info */
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-icon {
+    color: #FBC02D;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.contact-info a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #FBC02D;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+    margin-top: 1rem;
+}
+
+.newsletter-input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+
+.newsletter-input:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #FBC02D;
+    box-shadow: none;
+    color: #fff;
+}
+
+.newsletter-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter-button {
+    background: #FBC02D;
+    border: none;
+    color: #2C3E50;
+    font-weight: 600;
+    padding: 0.8rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.newsletter-button:hover {
+    background: #f9a825;
+    transform: translateY(-2px);
+}
+
+/* Footer Divider */
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    color: #bdbdbd;
+    font-size: 0.9rem;
+}
+
+.footer-bottom-link {
+    color: #bdbdbd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-link:hover {
+    color: #FBC02D;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #FBC02D;
+    color: #2C3E50;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    background: #f9a825;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 3rem 0 1rem;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .contact-info li {
+        justify-content: center;
+    }
+
+    .scroll-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+    }
+}

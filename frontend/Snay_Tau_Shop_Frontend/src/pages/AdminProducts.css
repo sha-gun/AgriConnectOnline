@@ -1,0 +1,124 @@
+.admin-products-container {
+    background: #f8f9fa;
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+.admin-products-title {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.admin-products-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, #e74c3c, #f39c12);
+}
+
+.add-product-btn {
+    background: #2ecc71 !important;
+    border: none !important;
+    padding: 0.8rem 1.5rem !important;
+    border-radius: 25px !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3) !important;
+}
+
+.add-product-btn:hover {
+    background: #27ae60 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4) !important;
+}
+
+.products-table {
+    background: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.products-table thead {
+    background: #34495e;
+    color: white;
+}
+
+.products-table th {
+    font-weight: 500;
+    padding: 1rem !important;
+}
+
+.products-table td {
+    vertical-align: middle;
+    padding: 1rem !important;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.edit-btn {
+    background: #f39c12 !important;
+    border: none !important;
+    padding: 0.4rem 1rem !important;
+    transition: all 0.3s ease !important;
+}
+
+.edit-btn:hover {
+    background: #d68910 !important;
+    transform: translateY(-2px);
+}
+
+.delete-btn {
+    background: #e74c3c !important;
+    border: none !important;
+    padding: 0.4rem 1rem !important;
+    transition: all 0.3s ease !important;
+}
+
+.delete-btn:hover {
+    background: #c0392b !important;
+    transform: translateY(-2px);
+}
+
+.size-badge {
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 0.3rem 0.6rem;
+    border-radius: 15px;
+    margin: 0.2rem;
+    display: inline-block;
+    font-size: 0.85rem;
+}
+
+.description-cell {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.stock-warning {
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+.stock-ok {
+    color: #2ecc71;
+    font-weight: 500;
+}
+
+.loading-spinner {
+    color: #3498db;
+} 

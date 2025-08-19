@@ -1,0 +1,73 @@
+/* 🛒 Cart Container */
+.cart-container {
+    padding-top: 100px;
+    margin-top: 20px;
+}
+
+/* 📝 Cart Title */
+.cart-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 📦 Cart Item */
+.cart-items .cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.cart-items .cart-item:last-child {
+    border-bottom: none;
+}
+
+/* 🖼️ Product Image */
+.cart-items img {
+    max-width: 80px;
+    border-radius: 5px;
+}
+
+/* 📝 Product Details */
+.cart-item-link {
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+}
+
+.cart-item-link:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* 💵 Cart Summary */
+.cart-summary {
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.cart-summary-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.cart-summary p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* ✅ Checkout Button */
+.cart-summary .btn-success {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .cart-title {
+        font-size: 1.8rem;
+    }
+    .cart-items img {
+        max-width: 60px;
+    }
+}
